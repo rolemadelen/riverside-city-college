@@ -2,9 +2,6 @@
 
 UCSD CSE 134B - HW6
 
-Name: [Removed] <br />
-PID: [Removed]
-
 Github: [link](https://github.com/jmyoi/MemeMaster) <br />
 Firebase: [Demo](https://mememaster-5bb4a.firebaseapp.com/pages/login.html)
 
