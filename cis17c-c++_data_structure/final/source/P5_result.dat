@@ -1,0 +1,5 @@
+ .... Total number of nodes: 500
+ .... searching in Binary Sorted Tree = floor( log(n) ) + 1
+   .... log(500) = 8.96578
+   .... floor(8.96578)+1 = 9
+

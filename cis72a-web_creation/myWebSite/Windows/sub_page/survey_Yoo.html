@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>WHO AM I</title>
+
+<style type="text/css">
+<!--
+body	{font-family: Buxton Sketch;font-size: x-large}
+
+.direction		{font-family: Arial; font-size: small;
+				font-style: Italic;}
+				
+.fieldset-auto-width		{display: inline-block;float: left;}
+
+legend		{color: blue;}
+
+hr		{height: 3px; background-color: #000000;}
+-->
+</style>
+</head>
+
+<body>
+<header>
+<a href="bodypart_Yoo.html"><img src="..\photo\bannerhome.jpg" width="1358" height="100" alt="Jiwon Yoo"></a>
+<hr></hr>
+</header>
+
+
+<form method="post" autocomplete="on">
+
+Now it's your turn. Tell me about yourself!!<br /><br />
+
+<fieldset><legend>Who are you?</legend>
+	<span class="direction">-Enter either one-</span><br />
+	Full Name: <input name="fullname" type="text" size="25" maxlength="50" autofocus/> &nbsp;
+	<span class="direction">or</span> &nbsp;
+	Nick Name: <input name="nickname" type="text" size="25" maxlength="25" /><br />
+	<p>I am a 
+		<select name="job" required>
+			<option value="" disabled selected></option>
+			<option>Student</option>
+			<option>Professor</option>
+			<option>Boy</option>
+			<option>Girl</option>
+			<option>Secret Agent(?!)</option>
+		</select>
+	</p>
+</fieldset><br />
+
+<div>
+<fieldset class="fieldset-auto-width"><legend>Hobbies</legend>
+	<span class="direction">- Check all that apply -</span><br />
+	<input name="hobbies" type="checkbox" value="collection_stamp"/>Collecting Stamps
+	<input name="hobbies" type="checkbox" value="collection_antique"/>Collecting Antiques 
+	<input name="hobbies" type="checkbox" value="instrument"/>Playing Musical Instruments<br />
+	<input name="hobbies" type="checkbox" value="reading"/>Reading Books
+	<input name="hobbies" type="checkbox" value="diary"/>Writing Diary 
+	<input name="hobbies" type="checkbox" value="gardening"/>Gardening<br />
+	<input name="hobbies" type="checkbox" value="photography"/>Photography
+	<input name="hobbies" type="checkbox" value="watching_tv"/>Watching TV 
+	<input name="hobbies" type="checkbox" value="watching_movies"/>Watching Movies<br /> 
+	<input name="hobbies" type="checkbox" value="watching_cartoons"/>Watching Cartoons 
+	<input name="hobbies" type="checkbox" value="dancing"/>Dancing 
+	<input name="hobbies" type="checkbox" value="cooking"/>Cooking 
+	<input name="hobbies" type="checkbox" value="running"/>Running<br />
+	<input name="hobbies" type="checkbox" value="fishing"/>Fishing 
+	<input name="hobbies" type="checkbox" value="singing"/>Singing 
+	<input name="hobbies" type="checkbox" value="sleeping"/>Sleeping 
+	<input name="hobbies" type="checkbox" value="playing_chess"/>Playing Chess<br />
+	<input name="hobbies" type="checkbox" value="playing_games"/>Playing Games 
+	<input name="hobbies" type="checkbox" value="traveling"/>Travelling
+	<input name="hobbies" type="checkbox" value="driving"/>Driving<br /> 
+	Other: <input name="hobbies" type="text" size="20" maxlength="30" />
+</fieldset>
+</div>
+
+<div>
+<fieldset class="fieldset-auto-width" style="margin-left: 150px"><legend>Personal Interests</legend>
+	<span class="direction">- Check all that apply -</span><br />
+	<input name="personal_interest" type="checkbox" value="tv">TV 
+	<input name="personal_interest" type="checkbox" value="music">Music 
+	<input name="personal_interest" type="checkbox" value="movie">Movie  
+	<input name="personal_interest" type="checkbox" value="computer">Computer<br />
+	<input name="personal_interest" type="checkbox" value="it">Internet Technology 
+	<input name="personal_interest" type="checkbox" value="programming">Programming<br />
+	<input name="personal_interest" type="checkbox" value="teaching">Teaching
+	<input name="personal_interest" type="checkbox" value="fashion"> Fashion
+	<input name="personal_interest" type="checkbox" value="sport">Sports 
+	<input name="personal_interest" type="checkbox" value="car">Car<br />
+	<input name="personal_interest" type="checkbox" value="game">Game 
+	<input name="personal_interest" type="checkbox" value="animal">Animal 
+	<input name="personal_interest" type="checkbox" value="art">Art and Design<br />
+	<input name="personal_interest" type="checkbox" value="news">News 
+	<input name="personal_interest" type="checkbox" value="beauty">Beauty<br />
+	<br />Other: <input name="Personal Interests" type="text" size="20" maxlength="30" />
+</fieldset>
+</div>
+
+<br clear="left"/>
+
+<p style="color: blue"> Anything you want me to know?<br />
+<textarea name="other" rows="3" cols="100" placeholder="ex) I Am a Jedi."></textarea><br />
+</p>
+
+<span class="direction">(If you press submit nothing will happen)</span><br />
+<input type="submit" value="SUBMIT" />
+<input type="reset" value="RESET" />
+</form>
+
+<hr></hr>
+<p class="direction">click top banner or <a href="bodypart_Yoo.html">here</a> to return to Main Page</p>
+</body>
+</html>

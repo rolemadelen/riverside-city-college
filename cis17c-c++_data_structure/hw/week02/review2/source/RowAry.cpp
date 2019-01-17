@@ -1,0 +1,37 @@
+/*
+    Author: Jiwon Yoo
+    File: RowAry.cpp
+    February 26, 2016, ( BEGIN: 16:10 PM  
+                         END  : 18:23 PM )
+	
+	Implementation file for the RowAry class
+*/
+
+#include <cstdlib>
+#include "../header/RowAry.h"
+
+//////////////////////////////////////////////////////////////////////
+// Constructor
+//////////////////////////////////////////////////////////////////////
+RowAry::RowAry(uint r) {
+	i_size = r;
+	ip_rowData = new int[r];
+	for(int i=0;i<r;++i)
+		ip_rowData[i] = rand() % 90 + 10; // [10-99]
+}
+
+//////////////////////////////////////////////////////////////////////
+// Destructor
+//////////////////////////////////////////////////////////////////////
+RowAry::~RowAry() {
+	delete [] ip_rowData;
+}
+
+//////////////////////////////////////////////////////////////////////
+// RETURN    : void
+// PARAMETER : int rows, int value
+// PURPOSE   : Mutator: change the value at index [r] of RowAry
+//////////////////////////////////////////////////////////////////////
+void RowAry::setData(int r, int val) {
+	ip_rowData[r] = val;
+}

@@ -1,0 +1,5 @@
+Max Pellet : 12
+Max Bad Pellet : 1
+Max Super Pellet : 0
+Max Points Earned : 11
+Largest Size : 12

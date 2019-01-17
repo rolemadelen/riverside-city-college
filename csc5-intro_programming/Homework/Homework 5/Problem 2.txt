@@ -1,0 +1,51 @@
+/*
+* Jiwon Yoo
+* Professor Ung
+* Student ID: 2485776
+* CSC5 - C++ Programming
+* Homework 5 - Problem 2
+* I certify this is my own work and code
+*/      
+
+// Generate Psuedo code for Problem 6 of Homework 4.
+-------------------------------------------------------------------------
+
+// declare a char type variable for rock-paper-scissor (r, p, s)
+// declare two computers type char
+// declare char type variable to store the user answer whether start program again or not
+
+// create Random generator(with new seeding)
+
+// loop start
+
+// generate random value (1 to 3) and set = to computer1
+	
+// generate random value (1 to 3) and set = to computer2
+
+	// if computer1 == computer2 (rock == rock)
+		// output nobody wins
+	
+	// if computer1 win
+		// output computer1 won.
+		// output the given phrase. (Rock break scissors)
+
+	// if computer1 lose
+		// output computer1 lost.
+		// output the given phrase (papare covers rock)
+		
+	//...(paper == paper)
+	//...if computer1 win
+	//...output computer1 wins
+	
+	//...(scissor == scissor)
+	//...if computer1 win
+	//...if computer1 lose
+
+
+	//ask the user to play again or not
+	
+	// if user input yes, play again
+	
+	// otherwise terminate the program
+
+// loop end 

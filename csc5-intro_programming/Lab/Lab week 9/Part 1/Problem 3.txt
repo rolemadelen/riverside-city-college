@@ -1,0 +1,17 @@
+// Describe the differences between cin.get(),
+// cin >>, and getline(cin, string).
+
+cin.get() = get single character. (char type variable used)
+	ex) char word;
+	    cin.get(word);
+
+cin >> = gets the value of designated type of a data. 
+	it assumes user to input valid data type. 
+	ex) int i;
+	    char ch;
+            string str;
+	    cin >> i //get number
+	    cin >> ch // get character
+	    cin >> string // get string
+
+getline(cin, string); = get every character until it hits new line character.

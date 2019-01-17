@@ -1,0 +1,15 @@
+The minimum spanning tree: 
+JFK --- BOS   187
+SFO --- LAX   337
+ORD --- JFK   740
+ORD --- DFW   802
+JFK --- MIA   1090
+DFW --- LAX   1235
+Weight: 4391
+
+Shortest path from BOS to LAX: 
+BOS ----> ORD   867
+ORD ----> DFW   802
+DFW ----> LAX   1235
+The shortest length: 2904
+

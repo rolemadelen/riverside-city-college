@@ -1,0 +1,21 @@
+# CIS 17C - C++ Data Structure (Lab work)
+  - WEEK 01
+  - WEEK 02
+  - WEEK 03
+  - WEEK 04
+    -	(Sorting + Analysis)
+  - WEEK 05
+    -  LinkedList	
+    - LinkedList Practice
+  - WEEK 06
+  - WEEK 07
+    - Recursion
+      - GCD
+      - Pascal Triangle
+      - Trigonometry: mutual recursion
+  - WEEK 08
+    - Max Function (Recursive vs. For)
+    - Max Fn. Time Comparison
+    - Max Fn. Operation Counts
+  - WEEK 12
+    - Hash
