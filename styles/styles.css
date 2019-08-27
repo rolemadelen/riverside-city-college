@@ -3,6 +3,7 @@ body {
 	font-family: arial, sans-serif;
 }
 
+/* --------------- Header ---------------*/
 /* Sprite Sheets*/
 #google-apps img {
 	object-fit: none;
@@ -21,6 +22,18 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	border: 1px solid white;
+}
+
+header nav span.nav-right :hover {
+	opacity: 0.85;
+}
+
 /* Navigation bar */
 header nav a {
 	color: #000000;
@@ -35,19 +48,30 @@ header nav span.nav-right {
 	opacity: 0.87;
 }
 
-/* Main Content */
+/* ---------------- main ----------------- */
+main {
+	margin-top: 89px;
+}
+main form{
+	width: 1139px;
+	margin: 0 auto;
+	text-align: center;
+}
+/* Google logo */
 #main-logo {
 	display: block;
 	width: 272px;
 	height: 92px;
 	clear: both;
-	margin: 0 auto; /* center the image */
+	margin: 0 auto;
+	/*padding-top: 109px;*/
 }
 #search-bar {
-	display: inline-block;
-	border: 1px rgb(223, 225, 229) solid;
+	border: 1px solid rgb(223, 225, 229);
 	border-radius: 35px;
 	padding: 5px 8px 0 20px;
+	width: 555px;
+	margin: 0 auto;
 }
 #search-bar input[type="text"] {
 	width: 514px;
@@ -59,4 +83,32 @@ header nav span.nav-right {
 #search-bar img {
 	padding: 7px 8px 0 0px;
 }
+#buttons input[type="submit"] {
+	display: inline-block;
+	margin: 11px 4px;
+	height: 34px;
+	padding: 0 16px;
+}
 
+/*---------------- Footer ------------------*/
+footer {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	left: 0;
+	bottom: 0;
+	border-top: 1px solid #e4e4e4;
+	background-color: #f2f2f2;
+}
+footer a {
+	color: #5F6368;
+	padding-left: 27px;
+	line-height: 40px;
+}
+footer div#footer-left {
+	display: inline-block;
+	float: left;
+}
+footer div#footer-right {
+	float: right;
+}
