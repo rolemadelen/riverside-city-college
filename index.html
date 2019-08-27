@@ -11,22 +11,30 @@
     <body>
 		<header>
 			<nav>
-				<a href="about.html">About</a>
-				<a href="store.html">Store</a>
-				<a href="gmail.html">Gmail</a>
-				<a href="images.html">Images</a>
-				<a href="apps.html"> apps </a>
-				<a href="profile.html">profile</a>
+				<span class="nav-left">
+					<a href="about.html">About</a>
+					<a href="store.html">Store</a>
+				</span>
+				<span class="nav-right">
+					<a href="gmail.html">Gmail</a>
+					<a href="images.html">Images</a>
+					<a href="apps.html" id="google-apps"><img src="https://ssl.gstatic.com/gb/images/i1_1967ca6a.png" alt="apps"></a>
+					<a href="profile.html" id="google-profile"><img src="https://lh3.googleusercontent.com/-XdMrSrXh2dg/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfAqFWAO9qZBCp-fq3uVm8HwwUb4A.CMID/s32-c/photo.jpg" alt="profile" /></a>
+				</span>
 			</nav>
 		</header>
 
 		<main>
-			<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
+			<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" id="main-logo">
 			<form action="#" method="GET">
-				<input type="text" name="search" id="searchbar" autofocus> <br>
-
-				<input type="submit" name="submit" id="submit" value="Google Search">
-				<input type="submit" name="random" id="randomsearch" value="I'm Feeling Lucky">
+				<div id="search-bar">
+					<input type="text" name="search" id="searchtext" autofocus> 
+					<img src="http://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="google voice search" width="24" height="24"/>
+				</div>
+				<div id="buttons">
+					<input type="submit" name="submit" id="submit" value="Google Search">
+					<input type="submit" name="random" id="randomsearch" value="I'm Feeling Lucky">
+				</div>
 			</form>
 		</main>
 	

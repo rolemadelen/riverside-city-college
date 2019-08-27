@@ -1,0 +1,62 @@
+/* Fonts */
+body {
+	font-family: arial, sans-serif;
+}
+
+/* Sprite Sheets*/
+#google-apps img {
+	object-fit: none;
+	object-position: -132px -37px;
+	width: 30px;
+	height: 30px;
+}
+
+#google-profile img {
+	border-radius: 50%;
+}
+
+/* Links */
+a {
+	font-size: 13px;
+	text-decoration: none;
+}
+
+/* Navigation bar */
+header nav a {
+	color: #000000;
+}
+header nav span.nav-left {
+	display: inline-block;
+	float: left;
+	opacity: 0.75;
+}
+header nav span.nav-right {
+	float: right;
+	opacity: 0.87;
+}
+
+/* Main Content */
+#main-logo {
+	display: block;
+	width: 272px;
+	height: 92px;
+	clear: both;
+	margin: 0 auto; /* center the image */
+}
+#search-bar {
+	display: inline-block;
+	border: 1px rgb(223, 225, 229) solid;
+	border-radius: 35px;
+	padding: 5px 8px 0 20px;
+}
+#search-bar input[type="text"] {
+	width: 514px;
+	height: 31px;
+	margin-top: -37px;
+	border: none;
+	outline: none; /* remove focused border outline */
+}
+#search-bar img {
+	padding: 7px 8px 0 0px;
+}
+
