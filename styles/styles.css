@@ -8,8 +8,8 @@ body {
 #google-apps img {
 	object-fit: none;
 	object-position: -132px -37px;
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 26px;
 }
 
 #google-profile img {
@@ -28,6 +28,7 @@ a:hover {
 
 header {
 	border: 1px solid white;
+	margin-top: 14px;
 }
 
 header nav span.nav-right :hover {
@@ -42,10 +43,29 @@ header nav span.nav-left {
 	display: inline-block;
 	float: left;
 	opacity: 0.75;
+	margin-top: 7px;
+}
+header nav span.nav-left a {
+	padding-left: 22px;
+	height: 15px;
 }
 header nav span.nav-right {
 	float: right;
 	opacity: 0.87;
+  margin-top: 7px;
+}
+header nav span.nav-right a {
+	padding-right: 15px;
+	height: 15px;
+}
+header nav span.nav-right2 {
+	margin-top: -7px;
+	margin-right: 2px;
+	float: right;
+	opacity: 0.87;
+}
+header nav span.nav-right2 a{
+	padding-right: 17px;
 }
 
 /* ---------------- main ----------------- */
@@ -64,30 +84,62 @@ main form{
 	height: 92px;
 	clear: both;
 	margin: 0 auto;
-	/*padding-top: 109px;*/
+	margin-bottom: 10px;
+	padding-top: 95px;
 }
 #search-bar {
 	border: 1px solid rgb(223, 225, 229);
 	border-radius: 35px;
-	padding: 5px 8px 0 20px;
-	width: 555px;
+	padding: 8px 8px 0 12px;
+	width: 554px;
 	margin: 0 auto;
+	margin-bottom: 20px;
+}
+#search-bar:hover {
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+	border-color: rgba(223,225,229,0);
+}
+#search-bar img {
+	position: relative;
+}
+
+.tooltip {
+	display: inline-block;
+}
+.tooltiptext {
+	visibility: hidden;
+	z-index: 1;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: white;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 10px;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
 }
 #search-bar input[type="text"] {
 	width: 514px;
-	height: 31px;
+	height: 34px;
+	line-height: 34px;
 	margin-top: -37px;
 	border: none;
 	outline: none; /* remove focused border outline */
-}
-#search-bar img {
-	padding: 7px 8px 0 0px;
+  font-size: 16px;
+	padding: 0 0;
 }
 #buttons input[type="submit"] {
+	font-size: 14px;
 	display: inline-block;
 	margin: 11px 4px;
-	height: 34px;
+	height: 36px;
 	padding: 0 16px;
+  background-color: rgb(242, 242, 242);
+	border: 1px solid rgb(242, 242, 242);
+	color: rgb(95, 99, 104);
 }
 
 /*---------------- Footer ------------------*/
