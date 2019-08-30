@@ -15,4 +15,4 @@ Top-right navigation part was hard for me to align them vertically. I used two `
 
 When I minimize the original Google's homepage, none of the sizes (like the width of the navigation bar or where the logo and search bar is located) do not change that I need to scroll to the right to see all them. But in my Google replication, Every elements except the search-bar move its position automatically (I think this has to do with `margin: 0 auto`) so the logo and the search bar is not positioned correctly on narrow page.
 
-I still need to work on CSS especiall the `grid` and different types of display such as `flex` model.
+I still need to work on CSS especially the `grid` and different types of display such as `flex` model.
