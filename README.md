@@ -4,6 +4,9 @@
 - Reconstruct the Google homepage using HTML/CSS - [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/html-css)
 
 ### Demo
+
+<img src="./home.png" height="600" width="1200"/>
+
 - [View on the web](https://myoiwritescode.github.io/projects/google-homepage/)
 
 ### Reflection
