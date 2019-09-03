@@ -1,0 +1,118 @@
+<!-- https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Rock Paper Scissor</title>
+	
+	<style>
+		img {
+			margin: 0 20px;
+		}
+	</style>
+
+	<script>   
+		function computerPlay() {
+			/* 0 = rock
+			   1 = paper
+			   2 = scissor 
+			*/
+			let choice = Math.floor(Math.random() * 3);
+			RPS = ["바위", "보", "가위"];
+			return RPS[choice];
+		}
+
+		function userPlay() {
+			let choice = prompt("가위 바위 보?");
+			
+			while(choice !== "가위" && choice !== "바위" && choice !== "보") {
+				choice = prompt("가위 바위 보?");
+			}
+
+			return choice;
+		}
+
+		function playRound(playerSelection, computerSelection) {
+			const DRAW = 0;
+			const WIN = 1;
+			const LOST = -1;
+			let result = DRAW;
+
+			if(playerSelection == "가위") {
+				if(computerSelection == "바위") {
+					result = LOST;
+				} else if(computerSelection == "보") {
+					result = WIN;
+				}
+			} else if (playerSelection == "바위") {
+				if(computerSelection == "보") {
+					result = LOST;
+				} else if(computerSelection == "가위") {
+					result = WIN;
+				}
+			} else { // 보
+				if(computerSelection == "가위") {
+					result = LOST;
+				} else if(computerSelection == "바위") {
+					result = WIN;
+				}
+			} 
+
+			return result;
+		}
+
+		// const playerSelection = userPlay();
+		// const computerSelection = computerPlay();
+		// console.log(playRound(playerSelection, computerSelection));
+
+		function game() {
+			const NUMBER_OF_GAMES = 5;
+			let playerScores = 0;
+			let computerScores = 0;
+
+			for(let i=0; i<NUMBER_OF_GAMES; ++i) {
+				const playerSelection = userPlay();
+				const computerSelection = computerPlay();
+				const gameResult = playRound(playerSelection, computerSelection);
+
+				(gameResult == 1) ? ++playerScores : computerScores;
+
+				console.log(`player: ${playerScores}\ncomputer: ${computerScores}.`);
+				let p = document.createElement('p');
+				let vs = document.createElement('span');
+				let userImg = document.createElement('img');
+				let computerImg = document.createElement('img');
+
+				vs.innerHTML = " VS. ";
+				userImg.src =`./img/${playerSelection}.png`;
+				computerImg.src = `./img/${computerSelection}.png`;
+				
+				p.appendChild(userImg);
+				p.appendChild(vs);
+				p.appendChild(computerImg);
+				document.body.appendChild(p);
+			}
+
+			if(playerScores > computerScores) {
+				console.log(`${playerScores}대 ${computerScores}로 승리했습니다.`)
+			} else if(computerScores > playerScores) {
+				console.log(`${playerScores}대 ${computerScores}로 패배했습니다.`)
+			} else {
+				console.log("0대 0으로 무승부 입니다.")
+			}
+		}
+
+	</script>  
+</head>
+<body>
+	<header>
+		<h1> 가위 바위 보! </h1>
+	</header>
+	<main>
+		<button onclick="game()">게임 시작!</button>
+	</main>
+
+</body>
+</html>
