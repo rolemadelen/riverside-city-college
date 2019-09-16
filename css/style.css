@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.etch-a-sketch {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.etch-a-sketch h1 {
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+
+    width: 700px;
+    padding-top: 10px;
+    margin-top: 10px;
+    letter-spacing: 10px; 
+    font-size: 60px;
+
+    background-color: crimson;
+    color: #FFD700;
+    text-shadow: black 5px 0px;
+}
+
+.board-container {
+    width: 600px;
+    height: 432px;
+    border: 50px solid crimson;
+    border-top: 0;
+    border-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.board-container .row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.board-container .col {
+    flex: 1;
+    border: 1px solid #cacaca;
+}
+
+x.board-container div.col:hover {
+    background-color: black;
+}
+
+.reset {
+    height: 45px;
+    width: 700px;
+    background-color: pink;
+}
