@@ -1,7 +1,10 @@
 let size = parseInt(prompt("grid size: "));
 let cells;
+let color_btn;
+let color_btn_txts = ['Color', 'Black'];
 let reset;
 let count = 0;
+let toggle = 0;
 
 console.log(size);
 
@@ -49,6 +52,25 @@ function createBoard() {
 function createResetButton() {
     const div = document.createElement('div');
     div.classList.add('reset');
+
+    const div_left = document.createElement('div');
+    const reset_button = document.createElement('button');
+    reset_button.classList.add('reset-button');
+    reset_button.textContent = "Reset";
+    div_left.appendChild(reset_button);
+
+    const div_mid = document.createElement('div');
+
+    const div_right = document.createElement('div');
+    const color_button = document.createElement('button');
+    color_button.classList.add('color-button');
+    color_button.textContent = "Color";
+    div_right.appendChild(color_button);
+
+    div.appendChild(div_left);
+    div.appendChild(div_mid);
+    div.appendChild(div_right);
+
     document.querySelector('.etch-a-sketch').appendChild(div);
     
 }
@@ -57,7 +79,18 @@ createTemplate();
 createBoard();
 createResetButton();
 
+color_btn = document.querySelector('.color-button');
 cells = document.querySelectorAll('.col');
+
+color_btn.addEventListener('click', (e) => {
+    toggle = !toggle;
+
+    if(toggle === true) {
+        color_btn.textContent = "Black";
+    } else {
+        color_btn.textContent = "Color";
+    }
+});
 
 cells.forEach(cell => {
     cell.addEventListener('mouseenter', (e) => {
@@ -73,11 +106,15 @@ cells.forEach(cell => {
             B = Math.floor(Math.random() * 255 + 1);
         }
 
-        cell.style.backgroundColor = `rgba(${R}, ${G}, ${B}, 1.0)`;
+        if(toggle == 1) {
+            cell.style.backgroundColor = `rgba(${R}, ${G}, ${B}, 1.0)`;
+        } else {
+            cell.style.backgroundColor = `rgba(0, 0, 0, 1.0)`;
+        }
     });
 });
 
-reset = document.querySelector('button');
+reset = document.querySelector('.reset button');
 reset.addEventListener('click', (e) => {
     location.reload();
 });
