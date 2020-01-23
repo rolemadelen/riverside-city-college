@@ -1,0 +1,21 @@
+ .... generating 100000 random short integers
+ .... 100000 numbers generated
+
+ .... selection sort
+   .... partial sort top p elements
+     .... total number of operations: 3000066
+        .. time -> 0 seconds
+
+ .... merge sort  -->  full sort
+   .... total number of operations: 14074101
+      .. time -> 0 seconds
+
+ .... quick sort  -->  full sort
+   .... total number of operations: 6474191
+      .. time -> 0 seconds
+
+ .... bubble sort  --> full sort (partial not possible)
+ .... takes about 130 seconds 
+   .... total number of operations: 35042169465
+      .. time -> 117 seconds
+
